@@ -1,3 +1,4 @@
+import React from 'react';
 import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 
@@ -11,7 +12,6 @@ const frameMetadata = getFrameMetadata({
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 })
 
-
 export const metadata: Metadata = {
   title: 'Eligibility Checker',
   description: 'Check your eligibility for the $Frame Earn program',
@@ -24,3 +24,9 @@ export const metadata: Metadata = {
     ...frameMetadata,
   },
 };
+
+const Page = () => {
+  return <div>Hello, farcaster!</div>;
+};
+
+export default Page;
