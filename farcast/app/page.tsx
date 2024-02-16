@@ -8,7 +8,7 @@ const frameMetadata = getFrameMetadata({
       label: "Check Your Eligibility"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmTJtCjE3HZ7Wi437WZPZ8okWTkqFCcpGv6jCoL7Ub686H/Elig%201.png`,
+  image: "https://cdn.discordapp.com/attachments/1050082795629842462/1208033742929662013/Elig1.png?ex=65e1d018&is=65cf5b18&hm=af14db7049acfe5b52b5424bc135bff256eed5e09f965307c1a5b395dce1259c&",
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 })
 
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Eligibility Checker',
     description: 'Check your eligibility for the $Frame Earn program',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmTJtCjE3HZ7Wi437WZPZ8okWTkqFCcpGv6jCoL7Ub686H/Elig%201.png`]
+    images: ["https://cdn.discordapp.com/attachments/1050082795629842462/1208033742929662013/Elig1.png?ex=65e1d018&is=65cf5b18&hm=af14db7049acfe5b52b5424bc135bff256eed5e09f965307c1a5b395dce1259c&"]
   },
   other: {
     ...frameMetadata,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 const Page = () => {
-  return <div>Hello, farcaster!</div>;
+  return <div>.</div>;
 };
 
 export default Page;
