@@ -6,24 +6,24 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     const idAsNumber = parseInt(id)
 
     const nextId = idAsNumber + 1
-
-    if(idAsNumber === 1){
+ 
+    if(idAsNumber === 1){     // NANTI REDIRECT SMART CONTRACT BUAT HOLDER / FOLLOW KRITERIA
             return new NextResponse(`<!DOCTYPE html><html><head>
         <title>Check Your Eligibility</title>
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="https://cdn.discordapp.com/attachments/1050082795629842462/1208033742929662013/Elig1.png?ex=65e1d018&is=65cf5b18&hm=af14db7049acfe5b52b5424bc135bff256eed5e09f965307c1a5b395dce1259c" />
         <meta property="fc:frame:button:1" content="Check Eligibility" />
         <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
-    </head></html>`);
-    } else if(idAsNumber === 2) {
+    </head></html>`); 
+    } else if(idAsNumber === 2) { // KALAU UDAH ELIG DAN HOLD 
         return new NextResponse(`<!DOCTYPE html><html><head>
         <title>You're Eligible</title>
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="https://cdn.discordapp.com/attachments/1050082795629842462/1208033743185510410/Elig2.png?ex=65e1d018&is=65cf5b18&hm=4a7b398261e94d9d536c0f502f195b82842f436923a753fb580e2fcb791aa0ef" />
         <meta property="fc:frame:button:1" content="You're Eligible" />
-        <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
+        <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1" />
     </head></html>`);
-    } else {
+    } else { // KALAU GA ELIG
         return new NextResponse(`<!DOCTYPE html><html><head>
         <title>Not Eligible</title>
         <meta property="fc:frame" content="vNext" />
