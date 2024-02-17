@@ -19,7 +19,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         return new NextResponse(`<!DOCTYPE html><html><head>
         <title>You're Eligible</title>
         <meta property="fc:frame" content="vNext" />
-        <meta property="fc:frame:image" content="https://cdn.discordapp.com/attachments/1050082795629842462/1208033743185510410/Elig2.png?ex=65e1d018&is=65cf5b18&hm=4a7b398261e94d9d536c0f502f195b82842f436923a753fb580e2fcb791aa0ef" />
+        <meta property="fc:frame:image" content="https://i.imgur.com/YaWLh1N.png" />
         <meta property="fc:frame:button:1" content="You're Eligible" />
         <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1" />
     </head></html>`);
@@ -27,7 +27,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         return new NextResponse(`<!DOCTYPE html><html><head>
         <title>Not Eligible</title>
         <meta property="fc:frame" content="vNext" />
-        <meta property="fc:frame:image" content="https://cdn.discordapp.com/attachments/1050082795629842462/1208033743445696532/Elig3.png?ex=65e1d018&is=65cf5b18&hm=ce0b546a6d7579c9b84ed44dee790843a1dbfbf936e1ae7c8c9fa55bc49cc50f" />
+        <meta property="fc:frame:image" content="https://imgur.com/vI5NUq1.png" />
         <meta property="fc:frame:button:1" content="Not Eligible" />
         <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
     </head></html>`);
