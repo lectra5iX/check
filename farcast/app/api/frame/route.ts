@@ -21,7 +21,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="https://i.imgur.com/YaWLh1N.png" />
         <meta property="fc:frame:button:1" content="You're Eligible" />
-        <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1" />
+        <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
     </head></html>`);
     } else { // KALAU GA ELIG
         return new NextResponse(`<!DOCTYPE html><html><head>
@@ -29,7 +29,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="https://imgur.com/vI5NUq1.png" />
         <meta property="fc:frame:button:1" content="Not Eligible" />
-        <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
+        <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1" />
     </head></html>`);
     }
 }
