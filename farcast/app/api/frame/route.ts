@@ -11,7 +11,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
             return new NextResponse(`<!DOCTYPE html><html><head>
         <title>Check Your Eligibility</title>
         <meta property="fc:frame" content="vNext" />
-        <meta property="fc:frame:image" content="https://cdn.discordapp.com/attachments/1050082795629842462/1208033742929662013/Elig1.png?ex=65e1d018&is=65cf5b18&hm=af14db7049acfe5b52b5424bc135bff256eed5e09f965307c1a5b395dce1259c" />
+        <meta property="fc:frame:image" content="https://i.imgur.com/CJC38Tw.png" />
         <meta property="fc:frame:button:1" content="Check Eligibility" />
         <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
     </head></html>`); 
