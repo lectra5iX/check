@@ -11,6 +11,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         <title>Check Your Eligibility</title>
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="https://i.imgur.com/BwiY49M.png" />
+        <meta property="fc:frame:input:text" content="EVM Address" />
         <meta property="fc:frame:button:1" content="Check Eligibility" />
         <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
     </head></html>`); 
